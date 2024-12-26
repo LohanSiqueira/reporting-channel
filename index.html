@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALE TRANSPETRO</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header> 
+        <h1 class="intro">Ambiente seguro</h1>
+        <p class="explicação">
+            Esse canal foi criado em prol de tornar o ambiente Transpetro melhor, 
+            seja com ideias de melhorias, denúncias comportamentais, desvios, Campanhas, 
+            dentre outros.
+        </p>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h2 class="prenchimento-do-formulario">
+                Por gentileza, preencha o formulário abaixo
+            </h2>
+
+            <form action="formulario" method="post"> 
+                <label for="opcao1">
+                    <input type="radio" id="opcao1" name="opcao" value="TEDUT" required> TEDUT
+                </label>
+                <br>
+                <label for="opcao2">
+                    <input type="radio" id="opcao2" name="opcao" value="TENIT" required> TENIT
+                </label>
+                <br>
+                <label for="opcao3">
+                    <input type="radio" id="opcao3" name="opcao" value="TERIG" required> TERIG
+                </label>
+                <br>
+
+                <p>Deseja manter sua denúncia anônima?</p>
+                <label for="anonimo_sim">
+                    <input type="radio" id="anonimo_sim" name="anonimo" value="sim" required> Sim
+                </label>
+                <label for="anonimo_nao">
+                    <input type="radio" id="anonimo_nao" name="anonimo" value="nao" required> Não
+                </label>
+
+                <div class="Nome">
+                    <label for="Nome">Seu Nome:</label>
+                    <input type="text" id="Nome" name="Nome" required>
+                </div>
+                <br>
+
+                <div class="telefone">
+                    <label for="Telefone">Seu telefone:</label>
+                    <input type="tel" id="Telefone" name="Telefone" required>
+                </div>
+                <br>
+
+                <div class="telefone">
+                    <label for="Telefone2">Outro telefone:</label>
+                    <input type="tel" id="Telefone2" name="Telefone2">
+                </div>
+                <br>
+
+                <div class="telefone">
+                    <label for="Telefone3">Mais um telefone:</label>
+                    <input type="tel" id="Telefone3" name="Telefone3">
+                </div>
+                <br>
+
+                <div class="descricao">
+                    <label for="Descricao">Descreva sua denúncia:</label>
+                    <textarea id="Descricao" name="Descricao" rows="4" required></textarea>
+                </div>
+                <br>
+
+                <button type="submit">Enviar</button> 
+            </form> 
+        </div>
+    </div>
+</body>
+</html>
